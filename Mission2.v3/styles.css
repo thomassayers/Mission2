@@ -1,0 +1,137 @@
+body {
+  font-family: "Gilroy", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Apply dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Styles for the header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #002d72;
+  color: #fff;
+}
+
+/* Styles for the dark mode toggle switch */
+.dark-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide the checkbox input */
+.dark-mode-toggle input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Styles for the dark mode toggle button */
+.dark-mode-toggle label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  background-color: #888;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Styles for the dark mode toggle switch knob */
+.dark-mode-toggle label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Styles when the dark mode is enabled */
+.dark-mode-toggle input:checked + label {
+  background-color: #444;
+}
+
+/* Styles for the dark mode toggle switch knob when checked */
+.dark-mode-toggle input:checked + label:after {
+  transform: translateX(20px);
+}
+
+/* Styles for the main content section */
+main {
+  padding: 20px;
+}
+
+/* Styles for heading elements */
+h1,
+h2 {
+  margin-top: 0;
+}
+
+/* Styles for input groups */
+.input-group {
+  margin-bottom: 10px;
+}
+
+/* Styles for input and select elements */
+input,
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for buttons */
+button {
+  padding: 10px 20px;
+  background-color: #002d72;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Additional styles for the add event section */
+#add-event {
+  margin-bottom: 20px;
+}
+
+/* Styles for the event list */
+#events {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styles for event list items */
+#events li {
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  padding: 4px 8px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Styles for the footer section */
+footer {
+  padding: 20px;
+  text-align: center;
+}

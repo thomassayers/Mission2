@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" />
+    <title>Election Countdown Timer</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <h1 class="royal-font">Election Countdown Timer</h1>
+      <div id="mode-switch">
+        <label for="mode-toggle">Switch to</label>
+        <input type="checkbox" id="mode-toggle" />
+        <span id="mode-label"></span> mode
+      </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+      <div id="countdown"></div>
+
+      <div id="quotes-section">
+        <div class="quote-arrow left-arrow">&lt;</div>
+        <div id="quote-content"></div>
+        <div class="quote-arrow right-arrow">&gt;</div>
+      </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p>
+        Make sure you’re enrolled and ready to vote. You can enrol, check, or
+        update your details online <a href="https://vote.nz">here</a>.
+      </p>
+    </footer>
+
+    <!-- JavaScript code -->
+    <script src="script.js"></script>
+    <script>
+      // Get the mode toggle element
+      const modeToggle = document.getElementById

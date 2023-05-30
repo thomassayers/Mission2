@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 Campaign Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- Page title -->
+    <h1>2023 Campaign Planner</h1>
+    <!-- Dark mode toggle switch -->
+    <div class="dark-mode-toggle">
+      <input type="checkbox" id="dark-mode-toggle">
+      <label for="dark-mode-toggle"></label>
+    </div>
+    <!-- Election countdown timer -->
+    <div id="countdown">
+      <span id="countdown-label">Time Until Election:</span>
+      <span id="countdown-timer"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="add-event">
+      <!-- Add Event section -->
+      <h2>Add Event</h2>
+      <!-- Event input fields -->
+      <div class="input-group">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name">
+      </div>
+      <div class="input-group">
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date">
+      </div>
+      <div class="input-group">
+        <label for="event-category">Event Category:</label>
+        <select id="event-category">
+          <!-- Event category options -->
+          <option value="doorknocking">Doorknocking</option>
+          <option value="phone-canvassing">Phone Canvassing</option>
+          <option value="fundraiser">Fundraiser</option>
+          <option value="human-hoardings">Human Hoardings</option>
+          <option value="campaign-meeting">Campaign Meeting</option>
+          <option value="public-meeting">Public Meeting</option>
+          <option value="morning-tea">Morning Tea</option>
+          <option value="debate">Debate</option>
+        </select>
+      </div>
+      <!-- Add event button -->
+      <button id="add-event-btn">Add Event</button>
+    </section>
+
+    <section id="event-list">
+      <!-- Event List section -->
+      <h2>Event List</h2>
+      <!-- List of added events -->
+      <ul id="events"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Print button -->
+    <button id="print-btn">Print</button>
+  </footer>
+
+  <!-- JavaScript code -->
+  <script src="script.js"></script>
+</body>
+
+</html>
